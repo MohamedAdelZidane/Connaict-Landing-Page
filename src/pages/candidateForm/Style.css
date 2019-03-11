@@ -1,0 +1,229 @@
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    #card{
+        width: 50%;
+    }
+
+    #LinkedInBtn{
+        height: 150%;
+        width: 66%;
+    }
+
+    #CreateAccBtn{
+        width: 66%;
+        height: 8vh;
+        margin-top: 2%
+    }
+    #haveAccount{
+        margin-top: 2%
+    }
+    
+    #LinkedInCol{
+        margin: 30px 0 45px 0;
+    }
+    .textField{
+        width: 70%;
+        margin: auto
+        
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 66%;
+        height: 0.75px;
+        background-Color: #cfcfcf
+    }
+  }
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    #card {
+        width: 90%; 
+    }
+    #LinkedInBtn{
+        height: 50%;
+        width: 94%;
+        margin: 30px 0 40px 0;
+    }
+    #CreateAccBtn{
+        width: 60%;
+        margin: 10px 0 10px 0
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 94%;
+        height: 0.75px;
+        background-Color: red
+    }
+  }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    #card {
+        width: 90%; 
+    }
+    #LinkedInBtn{
+        height: 50%;
+        width: 95.5%;
+        margin: 30px 0 40px 0;
+    }
+    #CreateAccBtn{
+        width: 95.5%;
+        height: 5vh;
+        margin: 10px 0 10px 0
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 95.5%;
+        height: 0.75px;
+        background-Color: #cfcfcf
+    }
+    #haveAccount{
+        margin-top: 5%
+    }
+    
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    #card {
+        width: 90%; 
+    }
+    #LinkedInBtn{
+        height: 50%;
+        width: 94%;
+        margin: 30px 0 40px 0;
+    }
+    #CreateAccBtn{
+        width: 60%;
+        margin: 10px 0 10px 0
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 94%;
+        height: 0.75px;
+        background-Color: red
+    }
+    
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #card {
+        width: 90%; 
+    }
+    #LinkedInBtn{
+        height: 50%;
+        width: 94%;
+        margin: 30px 0 40px 0;
+    }
+    #CreateAccBtn{
+        width: 94%;
+        height: 6vh;
+        margin: 10px 0 10px 0
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 94%;
+        height: 0.75px;
+        background-Color: #cfcfcf
+    }
+    #haveAccount{
+        margin-top: 5%
+    }
+    
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+  @media (min-width: 320px) and (max-width: 568px) {
+    #card {
+        width: 90%;
+        margin-top: 6%;
+        margin-bottom: 5%;
+    }
+    #LinkedInBtn{
+        height: 50%;
+        width: 90%;
+        margin: 30px 0 40px 0;
+    }
+    #CreateAccBtn{
+        width: 91%;
+        height: 8vh;
+        margin: 10px 0 10px 0
+    }
+    #SpanText{
+        background-Color: white;
+        position: relative;
+        top: -0.8em;
+        padding: 6px;
+    }
+    #SpanLine{
+        width: 90%;
+        height: 0.80px;
+        background-Color: #cfcfcf
+    }
+    #haveAccount{
+        margin-top: 5%
+    }
+
+
+  }
+
+
+
+  

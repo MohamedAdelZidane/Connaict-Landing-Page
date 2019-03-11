@@ -1,0 +1,130 @@
+.test{
+    height: 2px;
+    width: 5px
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    Button{
+        background-color: Blue;
+            color: white;
+            border: none;
+            height: 25%; 
+            border-radius: 3px;
+            width: 50%;
+    }
+    .NavBar{
+        padding-top: 2%;
+        
+    }
+
+    #content{
+      padding: 2% 0% 1% 11%;
+      background-color: #f4f6f7;
+    }
+    #features{
+      margin: 0% 0% 5% 5%;
+    }
+
+    
+    
+  }
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    #btnSubmit{
+        background-color: Blue;
+        color: white;
+        border: none;
+        height: 75%; 
+        border-radius: 3px;
+        width: 20%;
+        margin: 0.5%
+    }
+  }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    #btnSubmit{
+        background-color: Blue;
+        color: white;
+        border: none;
+        height: 75%; 
+        border-radius: 3px;
+        width: 30%;
+        margin: 0.5%
+    }
+    
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    Button{
+        background-color: black;
+            color: white;
+            border: none;
+            height: 25%; 
+            border-radius: 3px;
+            width: 50%;
+    }
+    
+  }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    
+    
+  }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    #startedBtn{
+        background-color: red;
+            color: white;
+            border: none;
+            height: 35%; 
+            border-radius: 3px;
+            width: 70%;
+    }
+    #leftColumn{
+        text-align: center
+    }
+    br {
+        display: none;
+    }
+    #mobileFeatures{
+        margin-top: 20%
+    }
+    
+  }

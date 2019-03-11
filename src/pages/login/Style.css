@@ -1,0 +1,11 @@
+footer{
+}
+footer a{
+    color: gray;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  footer a:hover{
+    color: #1b13bc;
+    text-decoration: none
+  }
