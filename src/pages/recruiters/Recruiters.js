@@ -12,6 +12,9 @@ import './Style.css';
 import NavigationBar from "../navigationBar/NavigationBar";
 import Forms from "../candidateForm/Forms";
 import Footer from "../footer/Footer";
+import MenuItem from '@material-ui/core/MenuItem';
+
+
 
 
 const styles = theme => ({
@@ -25,7 +28,7 @@ const styles = theme => ({
 
 const font = "'Raleway', sans-serif";
 
-class Candidates extends Component {
+class Recruiters extends Component {
 
   onFileLoad = (e, file) => console.log(e.target.result, file.name);
 
@@ -39,6 +42,7 @@ class Candidates extends Component {
       submitting: false,
       snackbarMessage: "",
       snackbarOpen: false,
+      currency: 'EUR',
     };
   }
 
@@ -136,22 +140,55 @@ class Candidates extends Component {
         <NavigationBar />
 
         <Row id="content">
-          <div className="col-md-12 col-lg-6 col-12" >
-            <h2 id="slogan">Get shortlisted. Get Hired.</h2>
+          <div className="col-md-6 col-12" id="leftColumn">
+            <h2>Get shortlisted</h2>
+            
+            {/* <Link to="/form">
+                <Button id="startedBtn">GET STARTED, IT'S FREE</Button></Link> */}
 
 
-            <div class="shadow-lg p-3 mb-5 bg-white rounded " id="mobileForm" >
-            <h5 id="mobileFormText">Sign up to get shortlisted for interviews & hired at <br id="signupBR"/> the top companies in Egypt</h5>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <h5>Join Connaict<br/>Register your interest in becoming a Connaict partner</h5>
               <form
                 id="loginForm"
                 autoComplete="off"
               >
+
+
+
                 <div className="col-md-12 col-12 textField" >
                   <TextField
-
                     id="email"
                     name="email"
-                    label="Email"
+                    label="Your Email Address"
+                    type="mail"
+                    value={this.state.name}
+                    fullWidth
+                    onChange={event => this.handleEmailChange(event)}
+                    margin="normal"
+                    variant="outlined"
+                    error={this.state.emailError}
+                  />
+                </div>
+                <div className="col-md-12 col-12 textField" >
+                  <TextField
+                    id="email"
+                    name="email"
+                    label="Your Title"
+                    type="mail"
+                    value={this.state.name}
+                    fullWidth
+                    onChange={event => this.handleEmailChange(event)}
+                    margin="normal"
+                    variant="outlined"
+                    error={this.state.emailError}
+                  />
+                </div>
+                <div className="col-md-12 col-12 textField" >
+                  <TextField
+                    id="email"
+                    name="email"
+                    label="Your Company"
                     type="mail"
                     value={this.state.name}
                     fullWidth
@@ -175,23 +212,65 @@ class Candidates extends Component {
                     error={this.state.emailError}
                   />
                 </div>
-
-                <div className="col-md-12 col-12 textField">
-                <input
-        accept="image/*"
-        className={classes.input}
-        id="contained-button-file"
-        multiple
-        type="file"
-      />
-      <label htmlFor="contained-button-file">
-        <Button variant="contained" component="span" className={classes.button}>
-          Upload your cv
-        </Button>
-      </label>
+                {/* <div className="col-md-12 col-12 textField">
+                  <TextField
+                    id="email"
+                    name="email"
+                    label="University"
+                    type="mail"
+                    value={this.state.name}
+                    fullWidth
+                    onChange={event => this.handleEmailChange(event)}
+                    margin="normal"
+                    variant="outlined"
+                    error={this.state.emailError}
+                  />
                 </div>
-                
+                <div className="col-md-12 col-12 textField">
+                  <TextField
+                    id="email"
+                    name="email"
+                    label="Graduation Year"
+                    type="mail"
+                    value={this.state.name}
+                    fullWidth
+                    onChange={event => this.handleEmailChange(event)}
+                    margin="normal"
+                    variant="outlined"
+                    error={this.state.emailError}
+                  />
+                </div> */}
 
+                {/* <div className="col-md-12 col-12 textField">
+                  <TextField
+                    id="password"
+                    name="password"
+                    label="Password"
+                    type="password"
+                    fullWidth
+                    onChange={event => this.handlePasswordChange(event)}
+                    autoComplete="current-password"
+                    margin="normal"
+                    error={this.state.passwordError}
+                    variant="outlined"
+                  />
+                </div> */}
+
+                
+<div className="col-md-12 col-12 textField">
+                  <TextField
+                    id="email"
+                    name="email"
+                    label="Your Average Monthly Candidate Volume"
+                    type="mail"
+                    value={this.state.name}
+                    fullWidth
+                    onChange={event => this.handleEmailChange(event)}
+                    margin="normal"
+                    variant="outlined"
+                    error={this.state.emailError}
+                  />
+                </div>
 
 
 
@@ -206,7 +285,7 @@ class Candidates extends Component {
                     variant="contained"
                     id="CreateAccBtn"
                   >
-                    notify me
+                    Register your interest
               </Button>
 
                 </div>
@@ -219,41 +298,41 @@ class Candidates extends Component {
           </div>
 
 
-          <div className='col-md-6 col-12 d-none d-lg-block' >
+          <div className='col-md-6 col-6 d-none d-sm-block' >
             <Row id="features">
-              <div className="col-2 iconImage" >
+
+              <div className="col-2" >
                 <img src={"./tailoredjobs.png"} style={{width:"70px", height:"60px"}} />
               </div>
-
-              <div className="col-10 iconText">
-                <h4>Jobs tailored to you</h4>
-                <p>Sophisticated matching algorithms pairs you with suitable jobs based on your interest</p>
+              <div className="col-10">
+                <h4>Intelligent Screening</h4>
+                <p>Analyze your <br/> with suitable jobs based on your interest</p>
 
               </div>
             </Row>
 
             <Row id="features">
 
-              <div className="col-2 iconImage">
+              <div className="col-2">
                 <img src={"./careerGrowth.png"} style={{width:"70px", height:"60px"}}/>
               </div>
 
-              <div className="col-10 iconText">
-                <h4>Career Development Plan</h4>
-                <p>We recommend you suitable courses based on your interest</p>
+              <div className="col-10">
+                <h4>Intelligent Automation</h4>
+                <p>We recommend you suitable courses based<br/> on your interest</p>
 
               </div>
             </Row>
 
             <Row id="features">
 
-              <div className="col-2 iconImage">
+              <div className="col-2">
                 <img src={"./application.png"} style={{width:"70px", height:"60px"}}/>
               </div>
 
-              <div className="col-10 iconText">
+              <div className="col-10">
                 <h4>One application</h4>
-                <p>Stop wasting time applying in irrelevant jobs we creates and submits your application in seconds</p>
+                <p>Stop wasting time applying in irrelevant jobs<br/> we creates and submits your application in<br/> seconds</p>
 
               </div>
             </Row>
@@ -262,56 +341,46 @@ class Candidates extends Component {
           </div>
 
 
-          <div className='d-lg-none .d-xl-block' id="mobileFeatures">
+          <div className='col-12 d-lg-none .d-xl-block' id="mobileFeatures">
 
 
             <Row>
-              <div className="col-12 col-sm-6 col-md-6 col-lg-12">
-              <div className="featureIcon" align="center" >
-              <img src={"./tailoredjobs.png"}  />
+
+              <div className="col-3">
+                <img src={"./test.svg"} />
               </div>
 
-              <div className="iconTitle">
-              <h4>Jobs tailored to you</h4>
+              <div className="col-9">
+                <h4>Private and exclusive</h4>
+                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
+
+              </div>
+            </Row>
+
+
+            <Row>
+
+              <div className="col-3">
+                <img src={"./test.svg"} />
               </div>
 
-              <div className="iconDescription">
-              <p>Sophisticated matching algorithms pairs you with suitable jobs based on your interest</p>
-              </div>
-              </div>
+              <div className="col-9">
+                <h4>Private and exclusive</h4>
+                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
 
-              <div className="col-12 col-sm-6 col-md-6 col-lg-12">
-
-            <div className="featureIcon" align="center">
-            <img src={"./application.png"} id="featureIcon" />
               </div>
-
-              <div className="iconTitle">
-              <h4>One application</h4>
-              </div>
-
-              <div className="iconDescription">
-              <p>Stop wasting time applying in irrelevant jobs we creates and submits your application in seconds</p>
-              </div>
-              </div>
-
             </Row>
 
             <Row>
 
-<div className="col-12 col-sm-12 col-md-12 col-lg-12">
-
-            <div className="featureIcon" align="center">
-            <img src={"./careerGrowth.png"}  />
+              <div className="col-3">
+                <img src={"./test.svg"} />
               </div>
 
-              <div className="iconTitle2">
-              <h4>Career development plan</h4>
-              </div>
+              <div className="col-9">
+                <h4>Private and exclusive</h4>
+                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
 
-              <div className="iconDescription2">
-              <p>We recommend you suitable courses based on your interest</p>
-              </div>
               </div>
             </Row>
 
@@ -328,4 +397,4 @@ class Candidates extends Component {
   }
 }
 
-export default withStyles(styles)(Candidates);
+export default withStyles(styles)(Recruiters);

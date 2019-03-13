@@ -31,6 +31,7 @@ import Videos from "./pages/videos/Videos";
 import Candidates from "./pages/candidates/Candidates";
 import Forms from "./pages/candidateForm/Forms";
 import NavigationBar from "./pages/navigationBar/NavigationBar";
+import Recruiters from "./pages/recruiters/Recruiters";
 
 
 
@@ -124,6 +125,10 @@ const routes = [
   {
     path: "/form",
     component: () => <Forms />
+  },
+  {
+    path: "/recruiters",
+    component: () => <Recruiters />
   },
   {
     path: "/navigationBar",

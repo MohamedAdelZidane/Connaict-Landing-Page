@@ -1,8 +1,3 @@
-.test{
-    height: 2px;
-    width: 5px
-}
-
 
 
 /* 
@@ -29,8 +24,12 @@
       padding: 2% 0% 1% 11%;
       background-color: #f4f6f7;
     }
-    #features{
-      margin: 0% 0% 5% 5%;
+    .iconText{
+      padding:4% 33% 0% 4%
+    }
+  
+    .iconImage{
+      padding:4% 0% 0% 7%
     }
 
     
@@ -43,35 +42,29 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-    #btnSubmit{
-        background-color: Blue;
-        color: white;
-        border: none;
-        height: 75%; 
-        border-radius: 3px;
-        width: 20%;
-        margin: 0.5%
-    }
+  #mobileFormText{
+    text-align: center
   }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+  #content{
+    padding: 2% 0% 1% 11%;
+    background-color: #f4f6f7;
+  }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-    #btnSubmit{
-        background-color: Blue;
-        color: white;
-        border: none;
-        height: 75%; 
-        border-radius: 3px;
-        width: 30%;
-        margin: 0.5%
-    }
-    
+  .textField{
+    text-align: center
+   }
+
+   .iconText{
+    padding:4% 23% 0% 6%
+  }
+
+  .iconImage{
+    padding:4% 0% 0% 7%
+  }
+
+
+
   }
 
   /* 
@@ -81,15 +74,79 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-    Button{
-        background-color: black;
-            color: white;
-            border: none;
-            height: 25%; 
-            border-radius: 3px;
-            width: 50%;
-    }
+
+  
+  #mobileFeatures{
+    margin: 0% 5% 10% 7%;
+}
+
+#mobileForm{
+  margin: 0% 5% 0% 5%;
+  text-align: center
+}
+br{
+  display: none
+}
+#slogan{
+  text-align: center
+}
+
+#signupBR{
+  display: none
+}
+
+
     
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #mobileFormText{
+      text-align: center
+    }
+   
+    #slogan{
+      text-align: left;
+      padding-left: 5%
+    }
+  
+  #mobileForm{
+    margin: 0% 5% 0% 5%;
+    text-align: center
+  }
+  
+  #signupBR{
+    display: none
+  }
+  
+  #mobileFeatures{
+    padding: 0% 0% 6% 0%;
+  }
+  
+  .featureIcon img{
+    width:70px;
+    height:60px;
+  }
+  .iconTitle{
+    padding: 5% 10% 0% 10%;
+    text-align: center;
+    font-size: 100px
+  }
+  .iconDescription{
+    /* margin: 0% 10% 0% 6%; */
+    padding: 0% 15% 0% 15%;
+    text-align: center;
+  }
+  .iconTitle2{
+    padding: 2% 10% 0% 10%;
+    text-align: center;
+    font-size: 100px
+  }
+  .iconDescription2{
+    /* margin: 0% 10% 0% 6%; */
+    padding: 0% 33% 0% 33%;
+    text-align: center;
+  }
+
   }
 
 /* 
@@ -99,7 +156,52 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-    
+  
+  #slogan{
+    text-align: left;
+    padding-left: 5%
+  }
+
+#mobileForm{
+  margin: 0% 5% 0% 5%;
+  text-align: center
+}
+
+#signupBR{
+  display: none
+}
+
+#mobileFeatures{
+  padding: 0% 0% 6% 0%;
+}
+
+.featureIcon img{
+  width:70px;
+  height:60px;
+}
+.iconTitle{
+  padding: 5% 10% 0% 10%;
+  text-align: center;
+  font-size: 100px
+}
+.iconDescription{
+  /* margin: 0% 10% 0% 6%; */
+  padding: 0% 12% 0% 12%;
+  text-align: center;
+}
+.iconTitle2{
+  padding: 2% 10% 0% 10%;
+  text-align: center;
+  font-size: 100px
+}
+.iconDescription2{
+  /* margin: 0% 10% 0% 6%; */
+  padding: 0% 26% 0% 26%;
+  text-align: center;
+}
+
+
+
     
   }
 
@@ -109,22 +211,54 @@
 */
   @media (min-width: 320px) and (max-width: 480px) {
   
-    #startedBtn{
-        background-color: red;
-            color: white;
-            border: none;
-            height: 35%; 
-            border-radius: 3px;
-            width: 70%;
+    #slogan{
+      text-align: left;
+      padding-left: 5%
     }
-    #leftColumn{
-        text-align: center
+    #mobileForm{
+      margin: 0% 5% 0% 5%;
     }
-    br {
-        display: none;
+
+    #signupBR{
+      display: none
     }
+    #mobileFormText{
+      text-align: center
+    }
+    .textField{
+     text-align: center
+    }
+
     #mobileFeatures{
-        margin-top: 20%
+      padding: 0% 0% 6% 0%;
     }
+
+    .featureIcon img{
+      width:70px;
+      height:60px;
+      margin-top: 5%;
+    }
+
+    .iconTitle{
+      padding: 5% 10% 0% 10%;
+      /* text-align: center; */
+      font-size: 100px
+    }
+    .iconDescription{
+      /* margin: 0% 10% 0% 6%; */
+      padding: 0% 10% 0% 10%;
+      /* text-align: center; */
+    }
+    .iconTitle2{
+      padding: 5% 10% 0% 10%;
+      /* text-align: center; */
+      font-size: 100px
+    }
+    .iconDescription2{
+      /* margin: 0% 10% 0% 6%; */
+      padding: 0% 10% 0% 10%;
+      /* text-align: center; */
+    }
+
     
   }

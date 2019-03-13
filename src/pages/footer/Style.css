@@ -1,19 +1,173 @@
-#footer{
-    font-size: 14px;
-    padding: 4% 0% 4% 11%;
-    background-color: #0d2b49;
-    /* padding: 0% 0% 0% 15%; */
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    
+    #footer{
+        font-size: 14px;
+        padding: 4% 5% 4% 11%;
+        background-color: #0d2b49;
+        /* padding: 0% 0% 0% 15%; */
+    }
+    
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
 }
 
-.linksColor a{
-    color: #fff;
-    text-decoration: none;
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+    #footer{
+        font-size: 14px;
+        padding: 4% 4% 4% 11%;
+        background-color: #0d2b49;
+        /* padding: 0% 0% 0% 15%; */
+    }
+    
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
 }
 
-.linksColor a:hover{
-    color: #0d47a1;
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    #footer{
+        font-size: 14px;
+        padding: 4% 10% 4% 5%;
+        background-color: #0d2b49;
+        /* padding: 0% 0% 0% 15%; */
+    }
+
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
 }
 
-#header{
-    color: #7a8599
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    
+
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
 }
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+    #footer{
+        font-size: 14px;
+        padding: 4% 10% 4% 5%;
+        background-color: #0d2b49;
+        /* padding: 0% 0% 0% 15%; */
+    }
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    #footer{
+        font-size: 14px;
+        padding: 4% 10% 4% 7%;
+        background-color: #0d2b49;
+        /* padding: 0% 0% 0% 15%; */
+    }
+
+    .linksColor a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .linksColor a:hover{
+        color: #0d47a1;
+    }
+    
+    #aboutInNavigation{
+        color: #7a8599
+    }
+}
+
+

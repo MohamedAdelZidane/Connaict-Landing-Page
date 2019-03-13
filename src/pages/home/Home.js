@@ -1,42 +1,8 @@
 import React, { Component } from "react";
-import { isLoggedIn } from "../../components/AuthService";
-import { API_URL } from "../../constants/Constants";
-import PropTypes from "prop-types";
-import { withStyles, MuiThemeProvider } from "@material-ui/core/styles";
-import { indigo } from "@material-ui/core/colors";
-import { createMuiTheme } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-// import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
+
 import { NavLink, Link } from "react-router-dom";
-import axios from "axios";
-import classNames from "classnames";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import ErrorIcon from "@material-ui/icons/Error";
-import InfoIcon from "@material-ui/icons/Info";
-import CloseIcon from "@material-ui/icons/Close";
-import green from "@material-ui/core/colors/green";
-import amber from "@material-ui/core/colors/amber";
-import IconButton from "@material-ui/core/IconButton";
-import Snackbar from "@material-ui/core/Snackbar";
-import SnackbarContent from "@material-ui/core/SnackbarContent";
-import WarningIcon from "@material-ui/icons/Warning";
-import CircularProgress from "@material-ui/core/CircularProgress";
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import { inherits } from "util";
-import SearchIcon from '@material-ui/icons/Search';
-import Hidden from '@material-ui/core/Hidden';
-import Divider from '@material-ui/core/Divider';
-import MenuIcon from '@material-ui/icons/Menu';
+
+
 import {  InputGroup,Jumbotron,Button, Nav, NavDropdown,Navbar,Form,FormControl,Container, Row, Col } from 'react-bootstrap';
 import './Style.css'
 import NavigationBar from "../navigationBar/NavigationBar";
@@ -82,23 +48,20 @@ class Home extends Component {
 
         <Row id="jumbotronColor">
 
-<div className="col-md-6">
-<div className="col-sm-12 d-lg-none .d-xl-block ">
-<img src={"./row1.png"} width="315px" height="169px"/>
-                  
-                </div>
+<div className="col-lg-6 col-md-12 col-sm-12 col-12">
+
 <Row >
-  <div className="col-xs-12 col-md-12" >
+  <div className="col-12  col-md-12" >
     <h3>The Egypt First</h3>
   </div>
 </Row>
 <Row>
-  <div className="col-xs-12 col-md-12" >
+  <div className="col-12 col-md-12" >
     <h1>Talent Match-Making Platform</h1>
   </div>
 </Row>
 <Row>
-  <div className="col-xs-12 col-md-12" >
+  <div className="col-12 col-md-12" >
     <h4>for Recruiters & Job Seekers</h4>
   </div>
 </Row>
@@ -112,7 +75,7 @@ class Home extends Component {
     </Link>
     </div>
     <div className="col-12 col-sm-12 col-md-12 col-lg-12" >
-    <Link to="/admins">
+    <Link to="/recruiters">
       <button id="CombtnSubmit" class="btn" >
         Companies
       </button>
@@ -122,9 +85,14 @@ class Home extends Component {
     </Row>
 
 </div>
-<div className="col-md-6 d-none d-sm-block">
+<div className="col-md-6 d-none d-lg-block">
 <img src={"./row1.png"} width="420px" height="300px"/>
 </div>
+
+<div className="col-sm-12 col-12 d-lg-none  .d-xl-block mobileImage">
+<img src={"./row1.png"} className="homeImage"/>
+{/* width="315px" height="169px" */}
+                </div>
 
 </Row>
 
