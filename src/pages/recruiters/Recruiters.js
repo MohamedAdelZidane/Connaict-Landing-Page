@@ -8,7 +8,7 @@ import axios from "axios";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Card, nputGroup, Jumbotron, Nav, NavDropdown, Navbar, Form, FormControl, Container, Row, Col } from 'react-bootstrap';
-import './Style.css';
+import './RecruitersStyle.css';
 import NavigationBar from "../navigationBar/NavigationBar";
 import Forms from "../candidateForm/Forms";
 import Footer from "../footer/Footer";
@@ -42,7 +42,6 @@ class Recruiters extends Component {
       submitting: false,
       snackbarMessage: "",
       snackbarOpen: false,
-      currency: 'EUR',
     };
   }
 
@@ -57,7 +56,7 @@ class Recruiters extends Component {
     else return false;
   };
 
-  
+
 
   handleEmailChange = event => {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -139,259 +138,245 @@ class Recruiters extends Component {
       <div style={{overflowX: "hidden"}}>
         <NavigationBar />
 
-        <Row id="content">
-          <div className="col-md-6 col-12" id="leftColumn">
-            <h2>Get shortlisted</h2>
-            
-            {/* <Link to="/form">
-                <Button id="startedBtn">GET STARTED, IT'S FREE</Button></Link> */}
+<Row>
+  <div className="col-md-12" id="slogan">
+  <h2>A new adventure begins 2019-05-05</h2>
+  <h2>Save Time. Reduce Cost. Find Talent.</h2>
+            <h3>We goes beyond keyword matches</h3>
+  </div>
+  </Row>
+        {/* <Row id="content">
+          <div className="col-md-12 col-12" id="slogan">
+            <h2>Save Time. Reduce Cost. Find Talent.</h2>
+            <h3>We goes beyond keyword matches</h3>
+          </div>
+        </Row> */}
 
-
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
-            <h5>Join Connaict<br/>Register your interest in becoming a Connaict partner</h5>
-              <form
-                id="loginForm"
-                autoComplete="off"
-              >
-
-
-
-                <div className="col-md-12 col-12 textField" >
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Your Email Address"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-                <div className="col-md-12 col-12 textField" >
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Your Title"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-                <div className="col-md-12 col-12 textField" >
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Your Company"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-                <div className="col-md-12 col-12 textField">
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Name"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-                {/* <div className="col-md-12 col-12 textField">
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="University"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-                <div className="col-md-12 col-12 textField">
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Graduation Year"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div> */}
-
-                {/* <div className="col-md-12 col-12 textField">
-                  <TextField
-                    id="password"
-                    name="password"
-                    label="Password"
-                    type="password"
-                    fullWidth
-                    onChange={event => this.handlePasswordChange(event)}
-                    autoComplete="current-password"
-                    margin="normal"
-                    error={this.state.passwordError}
-                    variant="outlined"
-                  />
-                </div> */}
-
-                
-<div className="col-md-12 col-12 textField">
-                  <TextField
-                    id="email"
-                    name="email"
-                    label="Your Average Monthly Candidate Volume"
-                    type="mail"
-                    value={this.state.name}
-                    fullWidth
-                    onChange={event => this.handleEmailChange(event)}
-                    margin="normal"
-                    variant="outlined"
-                    error={this.state.emailError}
-                  />
-                </div>
-
-
-
-              </form>
-              <Row align="center">
-
-                <div className="col-md-12 col-12 ">
-                  <Button
-                    disabled={this.checkEmpty() ? true : false}
-                    onClick={event => this.handleSubmit(event)}
-                    color="primary"
-                    variant="contained"
-                    id="CreateAccBtn"
-                  >
-                    Register your interest
-              </Button>
-
-                </div>
-              </Row>
-
-
+          <Row id="secondFeatures">
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6" >
+              <div className="col-md-12" align="center">
+                <img src={"./reduceCost.png"}  style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+              Reduce Recruiting Budget. Increase Talent Pool
+            </div>
+              <div className="col-md-12 featureText">
+                Our AI algorithms will source you top talents on-demand
+                and you pay / right match. Prevent paying for ads and inefficient sourcing costs
+            </div>
             </div>
 
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6" >
+              <div className="col-md-12" align="center">
+                <img src={"./intelligentFilter.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Intelligent Filter
+            </div>
+              <div className="col-md-12 featureText">
+                Never get overwhelmed by volume. our AI algorithms match you with top talents based on your criteria automatically, in real-time, with speed and incredible accuracy
+            </div>
+            </div>
 
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6">
+              <div className="col-md-12" align="center">
+                <img src={"./candidateSummary.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Intelligent Candidate Summaries
+            </div>
+              <div className="col-md-12 featureText">
+                our AI algorithms will parse and extracts helpful details from candidate profile and CV like skills set, management level and work experience
+            </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6 d-lg-none d-none d-sm-block">
+              <div className="col-md-12" align="center">
+                <img src={"./candidateResponse.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Increase Candidate Response Rate
+            </div>
+              <div className="col-md-12 featureText">
+                eliminate phone screen and reach candidates through their preferred method of contacts
+            </div>
+            </div>
+
+          </Row>
+
+          <Row id="secondFeatures">
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6 d-md-none d-lg-block d-sm-none" >
+              <div className="col-md-12" align="center">
+                <img src={"./candidateResponse.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Increase Candidate Response Rate
+            </div>
+              <div className="col-md-12 featureText">
+                eliminate phone screen and reach candidates through their preferred method of contacts
+            </div>
+            </div>
+            
+
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6">
+              <div className="col-md-12" align="center">
+                <img src={"./qualifyCandidates.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Efficiently Qualify Candidates
+            </div>
+              <div className="col-md-12 featureText">
+                asking candidates custom questions through In-App chat
+            </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 col-12 col-sm-6">
+              <div className="col-md-12" align="center">
+                <img src={"./candidateExperience.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Improve Candidate Experience
+            </div>
+              <div className="col-md-12 featureText">
+                Send valuable feedback to candidates in minutes through efficient In-Feedback system
+            </div>
+            </div>
+          </Row>
+
+          {/* <Row >
+            <div className="col-md-12 col-12 col-sm-12 col-lg-12">
+              <div className="col-md-12" align="center">
+                <img src={"./tailoredjobs.png"} style={{ width: "70px", height: "60px" }} />
+              </div>
+              <div className="col-md-12 featureTitle">
+                Reduce Your Recruiting Budget
+            </div>
+              <div className="col-md-12 featureText">
+                talent platform that provides you with a talent pool so you can pay / right match and prevent paying for ads and inefficient sourcing costs
+            </div>
+            </div>
+          </Row> */}
+
+
+        <Row id="form">
+          <div className="col-md-12">
+            <h4>Notify me at launch!</h4>
           </div>
-
-
-          <div className='col-md-6 col-6 d-none d-sm-block' >
-            <Row id="features">
-
-              <div className="col-2" >
-                <img src={"./tailoredjobs.png"} style={{width:"70px", height:"60px"}} />
+          <div class="shadow-lg p-3 mb-5 bg-white rounded col-md-12" id="Recruitersform">
+            <form
+              id="loginForm"
+              autoComplete="off"
+            >
+              <div className="col-md-12 col-12 textField" >
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Your Name"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
               </div>
-              <div className="col-10">
-                <h4>Intelligent Screening</h4>
-                <p>Analyze your <br/> with suitable jobs based on your interest</p>
+              <div className="col-md-12 col-12 textField" >
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Your Email Address"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
+              </div>
+              <div className="col-md-12 col-12 textField" >
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Your Title"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
+              </div>
+              <div className="col-md-12 col-12 textField" >
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Your Company"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
+              </div>
+              <div className="col-md-12 col-12 textField" >
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Your Phone Number"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
+              </div>
+              <div className="col-md-12 col-12 textField">
+                <TextField
+                  id="email"
+                  name="email"
+                  label="Avg Monthly Candidate Volume"
+                  type="mail"
+                  value={this.state.name}
+                  fullWidth
+                  onChange={event => this.handleEmailChange(event)}
+                  margin="normal"
+                  variant="outlined"
+                  error={this.state.emailError}
+                />
+              </div>
+
+              <div className="col-md-12 col-12 ">
+                <Button
+                  disabled={this.checkEmpty() ? true : false}
+                  onClick={event => this.handleSubmit(event)}
+                  color="primary"
+                  variant="contained"
+                  id="CreateAccBtn"
+                >
+                  notify me
+              </Button>
 
               </div>
+
+            </form>
+            </div>
+              
+     
+
             </Row>
 
-            <Row id="features">
+            
 
-              <div className="col-2">
-                <img src={"./careerGrowth.png"} style={{width:"70px", height:"60px"}}/>
-              </div>
+        
 
-              <div className="col-10">
-                <h4>Intelligent Automation</h4>
-                <p>We recommend you suitable courses based<br/> on your interest</p>
-
-              </div>
-            </Row>
-
-            <Row id="features">
-
-              <div className="col-2">
-                <img src={"./application.png"} style={{width:"70px", height:"60px"}}/>
-              </div>
-
-              <div className="col-10">
-                <h4>One application</h4>
-                <p>Stop wasting time applying in irrelevant jobs<br/> we creates and submits your application in<br/> seconds</p>
-
-              </div>
-            </Row>
-
-
-          </div>
-
-
-          <div className='col-12 d-lg-none .d-xl-block' id="mobileFeatures">
-
-
-            <Row>
-
-              <div className="col-3">
-                <img src={"./test.svg"} />
-              </div>
-
-              <div className="col-9">
-                <h4>Private and exclusive</h4>
-                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
-
-              </div>
-            </Row>
-
-
-            <Row>
-
-              <div className="col-3">
-                <img src={"./test.svg"} />
-              </div>
-
-              <div className="col-9">
-                <h4>Private and exclusive</h4>
-                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
-
-              </div>
-            </Row>
-
-            <Row>
-
-              <div className="col-3">
-                <img src={"./test.svg"} />
-              </div>
-
-              <div className="col-9">
-                <h4>Private and exclusive</h4>
-                <p>Nobody can see that you're on the<br /> market and you get access to jobs<br /> never published online</p>
-
-              </div>
-            </Row>
-
-
-
-
-          </div>
-
-        </Row>
-
-        <Footer/>
+        <Footer />
       </div>
     );
   }

@@ -1,5 +1,5 @@
 #navigationItems{
-    padding: 2% 0% 2% 11%;
+    padding: 2% 0% 2% 0%;
 }
 
 /* 
@@ -10,7 +10,6 @@
 @media (min-width: 481px) and (max-width: 767px) {
   
     #navigationItems{
-        padding: 2%;
         text-align: center
     }
     

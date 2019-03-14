@@ -7,14 +7,32 @@
 
 @media (min-width: 1281px) {
   
-    Button{
-        background-color: Blue;
-            color: white;
-            border: none;
-            height: 25%; 
-            border-radius: 3px;
-            width: 50%;
-    }
+  .btn{
+    padding-bottom: 4%
+  }
+
+  .btn Button{
+    background-color: #0d47a1;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        height: 150%;
+        width: 94%;
+}
+
+
+  .shareBtn-facebook {
+    color: #fff;
+    background-color: #4C67A1;
+  }
+  .shareBtn-facebook:hover {
+    color: #fff;
+    background-color: #405D9B;
+  }
+  .shareBtn-facebook:focus {
+    color: #fff;
+  }
+
     .NavBar{
         padding-top: 2%;
         
@@ -32,6 +50,15 @@
       padding:4% 0% 0% 7%
     }
 
+    .textField{
+      text-align: center
+     }
+     #mobileFormText{
+      text-align: center
+    }
+#mobileForm{
+  width: 75%
+}
     
     
   }
@@ -42,6 +69,19 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+
+  .btn{
+    padding-bottom: 5%
+  }
+  .btn Button{
+    background-color: #0d47a1;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        height: 160%;
+        width: 93%;
+}
+
   #mobileFormText{
     text-align: center
   }
@@ -75,19 +115,28 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
 
+  .btn Button{
+    background-color: #0d47a1;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        height: 8vh;
+        width: 92%  
+}
+
   
   #mobileFeatures{
     margin: 0% 5% 10% 7%;
 }
 
-#mobileForm{
+#mobileFormText{
   margin: 0% 5% 0% 5%;
   text-align: center
 }
 br{
   display: none
 }
-#slogan{
+#CandidatesSlogan{
   text-align: center
 }
 
@@ -100,11 +149,24 @@ br{
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
+
+    .btn{
+      padding-bottom: 4%
+    }
+    .btn Button{
+      background-color: #0d47a1;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          height: 160%;
+          width: 94%;
+  }
+
     #mobileFormText{
       text-align: center
     }
    
-    #slogan{
+    #CandidatesSlogan{
       text-align: left;
       padding-left: 5%
     }
@@ -156,8 +218,19 @@ br{
 
 @media (min-width: 481px) and (max-width: 767px) {
   
+  .btn{
+    padding-bottom: 5%
+  }
+  .btn Button{
+    background-color: #0d47a1;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        height: 150%;
+        width: 91%;
+}
   
-  #slogan{
+  #CandidatesSlogan{
     text-align: left;
     padding-left: 5%
   }
@@ -210,13 +283,26 @@ br{
   ##Screen = B/w 320px to 479px
 */
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .btn{
+      padding-bottom: 9%
+    }
+    .btn Button{
+      background-color: #0d47a1;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          height: 150%;
+          width: 90%;
+  }
   
-    #slogan{
+    #CandidatesSlogan{
       text-align: left;
       padding-left: 5%
     }
     #mobileForm{
       margin: 0% 5% 0% 5%;
+      
     }
 
     #signupBR{

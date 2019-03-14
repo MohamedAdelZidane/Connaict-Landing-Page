@@ -137,11 +137,12 @@ class Candidates extends Component {
 
         <Row id="content">
           <div className="col-md-12 col-lg-6 col-12" >
-            <h2 id="slogan">Get shortlisted. Get Hired.</h2>
+          <h2 id="CandidatesSlogan">A new adventure begins 2019-05-05</h2>
+            <h2 id="CandidatesSlogan">Get shortlisted. Get Hired.</h2>
 
 
             <div class="shadow-lg p-3 mb-5 bg-white rounded " id="mobileForm" >
-            <h5 id="mobileFormText">Sign up to get shortlisted for interviews & hired at <br id="signupBR"/> the top companies in Egypt</h5>
+            <h5 id="mobileFormText">Notify me at launch!</h5>
               <form
                 id="loginForm"
                 autoComplete="off"
@@ -198,18 +199,21 @@ class Candidates extends Component {
               </form>
               <Row align="center">
 
-                <div className="col-md-12 col-12 ">
-                  <Button
+                <div className="col-md-12 col-12 col-sm-12 btn">
+                <Button
                     disabled={this.checkEmpty() ? true : false}
                     onClick={event => this.handleSubmit(event)}
                     color="primary"
                     variant="contained"
-                    id="CreateAccBtn"
                   >
-                    notify me
+                    Submit
               </Button>
+                  </div>
+                  {/* <div className="col-md-6 col-6 col-sm-6 shareBtn">
+                  <a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.google.com&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><Button type="button" class="btn btn-facebook btn-lg"><i className="fa fa-facebook fa-2"></i> Share</Button></a>
 
-                </div>
+                  </div> */}
+                  
               </Row>
 
 
@@ -220,7 +224,7 @@ class Candidates extends Component {
 
 
           <div className='col-md-6 col-12 d-none d-lg-block' >
-            <Row id="features">
+            <Row>
               <div className="col-2 iconImage" >
                 <img src={"./tailoredjobs.png"} style={{width:"70px", height:"60px"}} />
               </div>
@@ -232,7 +236,7 @@ class Candidates extends Component {
               </div>
             </Row>
 
-            <Row id="features">
+            <Row >
 
               <div className="col-2 iconImage">
                 <img src={"./careerGrowth.png"} style={{width:"70px", height:"60px"}}/>
@@ -245,7 +249,7 @@ class Candidates extends Component {
               </div>
             </Row>
 
-            <Row id="features">
+            <Row>
 
               <div className="col-2 iconImage">
                 <img src={"./application.png"} style={{width:"70px", height:"60px"}}/>

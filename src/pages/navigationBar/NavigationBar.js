@@ -9,14 +9,14 @@ class NavigationBar extends Component {
         return (
     
 
-          <Row id="navigationItems">
-            <div className="col-md-8">
-              Connaict LOGO
+          <Row >
+            <div className="col-12 col-sm-12 col-md-12 col-lg-12" align="center"  id="navigationItems">
+            <img src={"./logo.png"}   />
             </div>
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               Already signed up?
               <a href="#">Login</a>
-            </div>
+            </div> */}
           </Row>
 
         );}
